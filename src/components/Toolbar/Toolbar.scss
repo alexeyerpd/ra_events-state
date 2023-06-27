@@ -1,0 +1,29 @@
+@use 'styles/variables';
+
+$block: '.#{variables.$ns}toolbar';
+
+#{$block} {
+    display: flex;
+    gap: 10px;
+
+    &__item {
+        padding: 10px;
+        outline: none;
+        background: none;
+        border: 1px solid #000;
+        cursor: pointer;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        &_selected {
+            color: #fff;
+            background-color: #000;
+
+            &:hover {
+                background: rgba(0, 0, 0, 0.75);
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+@use 'styles/variables';
+
+$block: '.#{variables.$ns}portfolio';
+
+#{$block} {
+    &__toolbar {
+        margin-block-end: 20px;
+    }
+}

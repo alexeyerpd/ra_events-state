@@ -1,0 +1,62 @@
+@use 'styles/variables';
+
+$block: '.#{variables.$ns}cards-view';
+
+#{$block} {
+    display: grid;
+    grid-template-columns: repeat(3, calc(100% / 3 - 200px / 3));
+    gap: 100px;
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 40px;
+
+        background-color: #f5f5f5;
+
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15), 0 10px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    &__img {
+        max-width: 200px;
+        object-fit: contain;
+    }
+
+    &__name {
+        text-transform: uppercase;
+    }
+
+    &__color {
+        font-size: 0.8em;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__price {
+        color: #d54044;
+        font-weight: 700;
+    }
+
+    &__btn-add {
+        padding: 10px 15px;
+
+        color: #d54044;
+        text-transform: uppercase;
+        font-weight: 700;
+
+        background-color: none;
+        outline: none;
+        border: 2px solid #d54044;
+        border-radius: 40px;
+
+        cursor: pointer;
+    }
+}

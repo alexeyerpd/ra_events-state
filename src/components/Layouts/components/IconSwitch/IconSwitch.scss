@@ -1,0 +1,14 @@
+@use 'styles/variables';
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+$block: '.#{variables.$ns}icon-switch';
+
+#{$block} {
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+
+    & > span {
+        font-size: 40px;
+    }
+}

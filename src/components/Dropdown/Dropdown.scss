@@ -1,0 +1,22 @@
+@use 'styles/variables';
+
+$block: '.#{variables.$ns}dropdown';
+
+#{$block} {
+    &__btn {
+        padding: 15px;
+
+        background-color: #507cfb;
+        color: #fff;
+        border-radius: 4px;
+
+        outline: none;
+        border: none;
+
+        text-transform: uppercase;
+    }
+
+    &__dropdown-list {
+        margin-block-start: 20px;
+    }
+}

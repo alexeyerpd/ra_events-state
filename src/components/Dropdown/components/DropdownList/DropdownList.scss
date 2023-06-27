@@ -1,0 +1,30 @@
+@use 'styles/variables';
+
+$block: '.#{variables.$ns}dropdown-list';
+
+#{$block} {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+
+    background-color: #fff;
+
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+
+    cursor: pointer;
+
+    &__item {
+        &:not(:last-child) {
+            padding-block-end: 10px;
+            border-bottom: 1px solid #f5f5f5;
+        }
+
+        &:not(:first-child) {
+            margin-block-start: 10px;
+        }
+
+        &:hover {
+            color: #507cfb;
+        }
+    }
+}

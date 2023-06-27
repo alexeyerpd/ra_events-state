@@ -1,0 +1,16 @@
+@use 'styles/variables';
+
+$block: '.#{variables.$ns}store';
+
+#{$block} {
+    font-family: Arial, Helvetica, sans-serif;
+
+    width: 100%;
+
+    &__controls {
+        display: flex;
+        justify-content: end;
+
+        margin-block-end: 15px;
+    }
+}

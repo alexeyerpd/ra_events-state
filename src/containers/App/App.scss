@@ -1,0 +1,15 @@
+@use 'styles/variables';
+
+$block: '.#{variables.$ns}app';
+
+#{$block} {
+    display: grid;
+    justify-items: start;
+    width: 1280px;
+    margin-inline: auto;
+    padding: 20px;
+
+    &__toolbar {
+        margin-block-end: 20px;
+    }
+}

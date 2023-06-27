@@ -1,0 +1,52 @@
+@use 'styles/variables';
+
+$block: '.#{variables.$ns}list-view';
+
+#{$block} {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-inline-end: 15px;
+
+        background-color: #f5f5f5;
+    }
+
+    &__img {
+        max-width: 100px;
+        object-fit: contain;
+    }
+
+    &__name {
+        text-transform: uppercase;
+    }
+
+    &__color {
+        font-size: 0.8em;
+    }
+
+    &__price {
+        color: #d54044;
+        font-weight: 700;
+    }
+
+    &__btn-add {
+        padding: 10px 15px;
+
+        color: #d54044;
+        text-transform: uppercase;
+        font-weight: 700;
+
+        background-color: none;
+        outline: none;
+        border: 2px solid #d54044;
+        border-radius: 40px;
+
+        cursor: pointer;
+    }
+}

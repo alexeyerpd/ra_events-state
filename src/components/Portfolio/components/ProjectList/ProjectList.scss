@@ -1,0 +1,24 @@
+@use 'styles/variables';
+
+$block: '.#{variables.$ns}project-list';
+
+#{$block} {
+    display: flex;
+    gap: 10px;
+    max-height: 70vh;
+    overflow-y: auto;
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 300px;
+        flex-shrink: 0;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        object-fit: contain;
+    }
+}
